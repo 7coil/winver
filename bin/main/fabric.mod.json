@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "winver",
+  "version": "${version}",
+  "name": "Winver",
+  "description": "Show the version string in the top left corner of the screen.",
+  "authors": [
+    "7coil"
+  ],
+  "contact": {
+    "website": "https://leondrolio.com",
+    "repo": "https://github.com/7coil/winver-mc"
+  },
+  "license": "MIT",
+  "icon": "assets/winver/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.leondrolio.mc.winver.client.WinverClient"
+    ],
+    "main": [
+      "com.leondrolio.mc.winver.Winver"
+    ]
+  },
+  "mixins": [
+    "winver.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "1.19",
+    "java": ">=17"
+  }
+}
